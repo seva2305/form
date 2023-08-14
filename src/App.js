@@ -4,7 +4,14 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+<form>
+  <lable>
+    name:
+    <input type="text" name="name" />
+    </lable>
+    <input type="submit" value="submit" />
+</form>
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,7 +24,13 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+      {/* <h1> hello</h1>
+      <h2> every</h2>
+      <h3> one</h3>
+      <h3> one</h3>
+      <h2> every</h2>
+      <h1> hello</h1> */}
     </div>
   );
 }
