@@ -8,8 +8,6 @@ const Form = () => {
        const Reset = () => {
         setData(0);
        }
-
-
     return (
         <>
             <form>

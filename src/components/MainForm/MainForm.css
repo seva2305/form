@@ -1,0 +1,32 @@
+.mainHeading{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    margin: 35px;
+}
+.mainContainer{
+    width: 400px;
+    margin: 100px auto 0px auto;
+}
+
+.mainForm{
+    background-color: (0,0,0,0.5);
+    width: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 5px solid #fff;
+
+}
+.mainLabel{
+    font-size: 25px;
+    color: white;
+}
+
+body{
+    background-image: url(https://my.alfred.edu/zoom/_images/foster-lake.jpg);
+}
+
+.formBox{
+    margin: 40px;
+}
