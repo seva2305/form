@@ -30,3 +30,18 @@ body{
 .formBox{
     margin: 40px;
 }
+.mainInput{
+    width: 300px;
+}
+.mainButton{
+    width: 200px;
+    margin: 20px 0px 0px 50px;
+    border-radius: 20px;
+    color: black;
+    padding: 7px;
+    font-size: 20px;
+}
+.valueHandle{
+    color: red;
+    font-size: 20px;
+}

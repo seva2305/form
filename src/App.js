@@ -1,12 +1,13 @@
 
 import './App.css';
-import MainForm from './components/MainForm/MainForm';
+import MainForm from "./components/MainForm/MainForm";
 function App() {
   return (
     <div>
 
   
       <MainForm/>
+    
     </div>
   );
 }
