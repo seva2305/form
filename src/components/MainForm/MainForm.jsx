@@ -33,13 +33,13 @@ const MainForm = () => {
             alert("last name is Invalid")
             }
             if (emailErr == true || email.length==0){
-                alert("email name is Invalid")
+                alert("email is Invalid")
                 }
                 if (phoneErr == true || phone.length==0){
-                    alert("phone name is Invalid")
+                    alert("phone no. is Invalid")
                     }
                     if (ageErr == true || age.length==0){
-                        alert("age name is Invalid")
+                        alert("age is Invalid")
                         }
       } 
 
@@ -98,9 +98,23 @@ const MainForm = () => {
 
     }
 
+    const SubmitForm = () => {
+        if (fnameErr === true || lnameErr === true || emailErr === true || phoneErr === true || ageErr === true || fname.length === 0 || lname.length === 0 || email.length === 0 || phone.length ===0 || age.length === 0){
+            document.getElementById('FailMessage').innerHTML = "Registration Unsuccessful";
+            document.getElementById('FailMessage').style.display="block"
+            document.getElementById('PassMessage').style.display="none"
+        } else {
+            document.getElementById('PassMessage').innerHTML = "Registration Successful";
+            document.getElementById('PassMessage').style.display="block"
+            document.getElementById('FailMessage').style.display="none"
+        }
+    }
+
     return (
         <>
             <div className="mainContainer">
+                <div className='PassMessage' id='PassMessage'></div>
+                <div className='FailMessage' id='FailMessage'></div>
                 <div className="mainForm">
                     <h1 className='mainHeading'>Regestration Form</h1>
                     <form className='formBox' onSubmit={ fnamevaluehandle} >
@@ -117,7 +131,7 @@ const MainForm = () => {
                         <br/>
                         <label className='mainLabel'>Age:</label>
                         <input type="text" name="age" onChange={ageHandle} className='mainInput' />{ageErr?<span className='ErroeMessage'>Age is Invalid</span>:""}
-                        <button type="submit" className='mainButton'>submit</button>
+                        <button type="submit"  onClick={SubmitForm} className='mainButton'>submit</button>
                     </form>
                 </div>
             </div>

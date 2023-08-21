@@ -49,3 +49,17 @@ body{
     color: red;
     font-size: medium;
 }
+.PassMessage{
+    color: rgb(0, 68, 255);
+    font-size: 26px;
+    width: 100px;
+    margin: auto;
+    padding: 55px;
+}
+.FailMessage{
+    color: rgb(255, 0, 0);
+    font-size: 25px;
+    width: 100px;
+    margin: auto;
+    padding: 55px;
+}
